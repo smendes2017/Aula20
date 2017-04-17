@@ -1,0 +1,43 @@
+﻿<!-- Janela modal para exclusão de produto -->
+<div id="janelaexclusao" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-danger">
+                <h3>Excluir dados do Produto</h3>
+                Deseja realmente excluir o produto abaixo?
+            </div>
+
+            <div class="modal-body">
+
+                Código: <span id="lblcodigo"></span> <br/>
+
+                Nome do Produto: <span id="lblnome"></span> <br />
+
+                Preço: <span id="lblpreco"></span> <br />
+
+                Quantidade: <span id="lblquantidade"></span> <br />
+
+                Total: <span id="lbltotal"></span> <br />
+
+                Categoria: <span id="lblcategoria"></span> <br />
+
+            </div>
+
+            <div class="modal-footer">
+
+                <span id="mensagemexclusao"></span>
+
+                <button class="btn btn-warning" data-dismiss="modal">
+                    Fechar
+                </button>
+
+                <button id="btnexclusao" class="btn btn-danger">
+                    Confirmar Exclusão
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>

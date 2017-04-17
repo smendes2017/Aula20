@@ -1,0 +1,42 @@
+﻿@{   
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!-- seção javascript do head -->
+@section javascript{
+    <script src="~/js/_produto-consulta.js"></script>
+}
+
+<h4>Consulta de Produtos</h4>
+<a href="/Home/Index">Voltar</a> para a página inicial.
+<hr/>
+
+<span id="mensagem"></span>
+
+<table id="tabela" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome do Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th>Categoria</th>
+            <th>Operações</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="7">
+                Quantidade de registros: <span id="quantidadeprodutos"></span>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- PartialViews -->
+@Html.Partial("_Edicao")
+@Html.Partial("_Exclusao")

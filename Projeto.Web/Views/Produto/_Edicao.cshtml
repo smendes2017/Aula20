@@ -1,0 +1,57 @@
+﻿<!-- Janela modal para edição de produto -->
+<div id="janelaedicao" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-header bg-primary">
+                <h3>Atualizar dados do Produto</h3>
+                Para editar os dados, utilize os campos abaixo
+            </div>
+
+            <div class="modal-body">
+
+                <input type="hidden" id="txtcodigo"/>
+
+                <label>Nome do Produto:</label>
+                <input type="text" id="txtnome" class="form-control"
+                       placeholder="Digite aqui" />
+                <br />
+
+                <label>Preço:</label>
+                <input type="text" id="txtpreco" class="form-control"
+                       placeholder="Digite aqui" />
+                <br />
+
+                <label>Quantidade:</label>
+                <input type="number" id="txtquantidade" class="form-control" />
+                <br />
+
+                <label>Selecione a Categoria:</label>
+                <select id="ddlcategoria" class="form-control">
+                    <option value="">- Selecione uma Opção -</option>
+                    <option value="1">Informática</option>
+                    <option value="2">Eletrônicos</option>
+                    <option value="3">Games</option>
+                    <option value="4">Outros</option>
+                </select>
+                <br />
+
+            </div>
+
+            <div class="modal-footer">
+
+                <span id="mensagemedicao"></span>
+
+                <button class="btn btn-warning" data-dismiss="modal">
+                    Fechar
+                </button>
+
+                <button id="btnedicao" class="btn btn-primary">
+                    Atualizar Dados
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
